@@ -8,6 +8,7 @@ export default {
     "./src/comps/Right.jsx",
     "./src/comps/Select.jsx",
     "./src/comps/Search.jsx",
+    "./src/comps/Home.jsx",    
   ],
   theme: {
     extend: {},

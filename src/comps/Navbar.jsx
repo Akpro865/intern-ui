@@ -9,9 +9,9 @@ import profile from '../assets/profile.jpeg'
 
 function Navbar() {
   return (
-    <div className='flex pt-2'>
+    <div className='flex pt-2 sticky top-0 z-50 bg-white'>
       <section className='flex items-center flex-1 border-b-[6px]'>
-        <div className='w-1/6 pl-6 flex justify-center text-4xl text-blue-800'>
+        <div className='w-1/6 pl-6 flex justify-center text-3xl text-gray-500'>
           <RiHome6Fill />
         </div>
         <Search />
