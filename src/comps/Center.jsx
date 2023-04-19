@@ -1,4 +1,4 @@
-import back from '../assets/back.jpg'
+import book from '../assets/book.mp4'
 import profile from '../assets/profile.jpeg'
 import { AiOutlineEye, AiFillHeart } from 'react-icons/ai'
 import { BsThreeDotsVertical, BsFillHeartFill } from 'react-icons/bs'

@@ -9,6 +9,7 @@ export default {
     "./src/comps/Select.jsx",
     "./src/comps/Search.jsx",
     "./src/comps/Home.jsx",    
+    "./src/comps/Category.jsx",
   ],
   theme: {
     extend: {},

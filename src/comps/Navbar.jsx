@@ -6,14 +6,15 @@ import { SlCalender } from 'react-icons/sl'
 import { MdOutlineMarkUnreadChatAlt, MdOutlineInterests, MdNotificationsActive } from 'react-icons/md'
 import { FiPlayCircle, FiChevronDown } from 'react-icons/fi'
 import profile from '../assets/profile.jpeg'
+import { Link } from 'react-router-dom'
 
-function Navbar() {
+function Navbar({ setCategory }) {
   return (
-    <div className='flex pt-2 sticky top-0 z-50 bg-white'>
+    <div className='flex pt-0.5 sticky top-0 z-50 bg-white'>
       <section className='flex items-center flex-1 border-b-[6px]'>
-        <div className='w-1/6 pl-6 flex justify-center text-3xl text-gray-500'>
+        <Link to='/' onClick={()=>setCategory(false)} className='w-1/6 pl-6 flex justify-center text-3xl text-gray-500'>
           <RiHome6Fill />
-        </div>
+        </Link>
         <Search />
       </section>
 

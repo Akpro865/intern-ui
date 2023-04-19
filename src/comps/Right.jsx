@@ -1,26 +1,30 @@
+import { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { MdOutlineMusicNote } from 'react-icons/md'
 import { TiArrowBack } from 'react-icons/ti'
 import { AiFillHeart } from 'react-icons/ai'
 import { IoSend } from 'react-icons/io5'
 import profile from '../assets/profile.jpeg'
+import '../App.css'
 
 function Right() {
+
   return (
-    <section className='w-5/12 m-5'>
-     <div className='font-semibold w-10/12'>
+    <section className='w-5/12 mx-4'>
+     <div className='font-semibold mt-2 w-11/12'>
       <span className='mx-1'>#nature_lover</span>
       <span className='mx-1'>#save_nature</span>
      </div>
 
-     <p className='my-2 text-[15px] w-10/12'>"Nature is a great good thing created by naturally, everyone need to save the earth. Because once we loose we cannot get back ever."</p>
+     <p className='my-1 text-[15px] w-11/12'>"Nature is a great good thing created by naturally, everyone need to save the earth. Once we loose we cannot get back ever."</p>
 
-     <div className='my-4 flex items-center w-11/12'>
+     <div className='my-3 flex items-center w-10/12'>
       <span className='bg-white font-medium px-2 py-0.5 rounded-md text-black'>@music</span>
       <MdOutlineMusicNote className='mx-3 text-3xl text-purple-500'/>
       <span>oh oh kadhal en kaviyae</span>
      </div>
 
-     <section className='w-11/12 bg-white text-black rounded-md p-1'>
+     <section className='w-10/12 bg-white h-[405px] overflow-scroll hideScroll text-black rounded-xl p-0.5'>
       <div className='my-2 flex items-center'>
        <div className='w-1/6 flex justify-center'>
         <img src={profile} className='w-10 h-10 rounded-full object-cover' />
@@ -28,11 +32,11 @@ function Right() {
 
        <div className='bg-[#f3f6f8] w-4/6 p-2 rounded-md'>        
         <div className=''>
-         <span className='font-semibold'>Jessica</span>
+         <span className='font-semibold text-[15px]'>Jessica</span>
          <span className='text-[10px] px-2'>Apr 29, 2023 at 8.30am</span>
         </div>
         <div className='flex justify-between items-end'>
-          <span className='text-[15px]'>Writing something....</span>
+          <span className='text-[14px]'>Writing something....</span>
           <div className='text-[11px]'>
            <span className='px-1'>3 likes</span>
            <span>2 replies</span>
@@ -51,13 +55,13 @@ function Right() {
         <img src={profile} className='w-10 h-10 rounded-full object-cover' />
        </div>
 
-       <div className='bg-blue-100 w-4/6 p-2 rounded-md'>        
+       <div className='bg-sky-100 w-4/6 p-2 rounded-md'>        
         <div className=''>
-         <span className='font-semibold'>Jon D</span>
+         <span className='font-semibold text-[15px]'>Jon D</span>
          <span className='text-[10px] px-2'>Apr 29, 2023 at 8.30am</span>
         </div>
         <div className='flex justify-between items-end'>
-          <span className='text-[15px]'>Music lover</span>
+          <span className='text-[14px]'>Music lover</span>
           <div className='text-[11px]'>
            <span className='px-1'>3 likes</span>
            <span>2 replies</span>
@@ -78,11 +82,11 @@ function Right() {
                      </div>
                         <div className='bg-[#f3f6f8] w-3/5 p-2 rounded-md'>        
                           <div className=''>
-                           <span className='font-semibold'>Sonia M</span>
+                           <span className='font-semibold text-[15px]'>Sonia M</span>
                            <span className='text-[10px] px-1'>Apr 29, 2023 at 8.30am</span>
                           </div>
                           <div className='flex justify-between items-end'>
-                            <span className='text-[15px]'>well send @jessica</span>
+                            <span className='text-[14px]'>well send @jessica</span>
                             <div className='text-[11px]'>
                              <span className='px-1'>3 likes</span>
                              <span>2 replies</span>
@@ -102,11 +106,11 @@ function Right() {
                      </div>
                         <div className='bg-[#f3f6f8] w-3/5 p-2 rounded-md'>        
                           <div className=''>
-                           <span className='font-semibold'>Prokumar S</span>
+                           <span className='font-semibold text-[15px]'>Prokumar S</span>
                            <span className='text-[10px] px-1'>Apr 29, 2023 at 8.30am</span>
                           </div>
                           <div className='flex justify-between items-end'>
-                            <span className='text-[15px]'>great one @jessica</span>
+                            <span className='text-[14px]'>great one @jessica</span>
                             <div className='text-[11px]'>
                              <span className='px-1'>3 likes</span>
                              <span>2 replies</span>
@@ -128,11 +132,11 @@ function Right() {
 
        <div className='bg-[#f3f6f8] w-4/6 p-2 rounded-md'>        
         <div className=''>
-         <span className='font-semibold'>Jessica</span>
+         <span className='font-semibold text-[15px]'>Jessica</span>
          <span className='text-[10px] px-2'>Apr 29, 2023 at 8.30am</span>
         </div>
         <div className='flex justify-between items-end'>
-          <span className='text-[15px]'>I love play cricket</span>
+          <span className='text-[14px]'>I love play cricket</span>
           <div className='text-[11px]'>
            <span className='px-1'>3 likes</span>
            <span>2 replies</span>
